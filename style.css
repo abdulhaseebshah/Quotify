@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Macondo&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.quote-container {
+  background: url("1.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-container .quoteArea {
+  width: 600px;
+  height: 600px;
+  background-color: #fff;
+}
+
+.quote-container .quoteArea span {
+  display: block;
+  /* font-size: 3rem; */
+  font-family: "Macondo", cursive;
+  color: #071f26;
+}
+
+.quote-container .quoteArea p {
+  text-align: right;
+  margin-top: 5rem;
+  font-size: 1.8rem;
+  font-style: italic;
+  color: #888;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.controls button {
+  border: 0px;
+  padding: 1rem 1.2rem;
+  font-size: 18px;
+  color: #071f26;
+  cursor: pointer;
+  border: 1px solid #071f26;
+  background: transparent;
+  transition: 0.3s;
+  border-radius: 0.6rem;
+}
+
+button:hover {
+  color: #fff;
+  background-color: #071f26;
+}
+
+@media (max-width: 576px) {
+  .quote-container .quoteArea {
+    width: 350px;
+    padding: 2rem 1rem;
+  }
+
+  .quote-container .quoteArea span {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .quote-container .quoteArea p{
+    font-size: 1rem;
+  }
+}
